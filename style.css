@@ -1,0 +1,189 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-size: 90vw;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 120%;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 20%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 20px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body {
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #111;
+    padding-top: 5px;
+}
+
+.sidebar h1 {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Rubik";
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    color: grey;
+    text-decoration: none;
+    font-family: "Rubik";
+    letter-spacing: 2px;
+}
+
+.sidebar a:hover {
+    color: #fff;
+    margin-left: 20px;
+    transition: 1s ease;
+}
+
+i {
+    display: block;
+}
+
+.sidebar i {
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.week {
+    display: inline-block;
+    position: relative;
+    width: 64%;
+    height: 385px;
+    vertical-align: top;
+    padding: 0 5% 0 7%;
+}
+
+.week1,
+.week2 {
+    margin: 0;
+}
+
+.week1 {
+    margin-bottom: 10px;
+}
+
+.current0,
+.current1,
+.current2,
+.current3,
+.current4,
+.current5,
+.current6,
+.current7 {
+    display: inline-block;
+    height: 187px;
+    font-size: 11px;
+    padding: 10px 0 0 10px;
+    background: white;
+    border-right: 10px solid grey;
+}
+
+.current0:hover,
+.current1:hover,
+.current2:hover,
+.current3:hover,
+.current4:hover,
+.current5:hover,
+.current6:hover,
+.current7:hover {
+    background: #fff;
+}
